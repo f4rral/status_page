@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Haval';
+    src: url('Haval-Light.otf') format('opentype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Haval';
+    src: url('Haval-Regular.otf') format('opentype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Haval';
+    src: url('Haval-Medium.otf') format('opentype');
+    font-weight: 500;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    padding: 80px;
+
+    font-family: 'Haval', 'Raleway', sans-serif;
+    color: #ffffff;
+
+    background: #000000;
+}
+
+main {
+
+}
+
+.header {
+    display: flex;
+}
+
+.header__slogan {
+
+}
+
+.header__logo {
+    margin-left: 30px;
+}
+
+.slogan {
+    display: flex;
+    width: 100%;
+    height: 54px;
+}
+
+.slogan__cut {
+    display: inline-block;
+    position: relative;
+    left: 16px;
+    width: 38px;
+    height: 54px;
+
+    background-color: #44b8b6;
+    transform: skewX(-28deg);
+}
+
+.slogan__content {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    padding-left: 52px;
+
+    font-size: 18px;
+    color: #1a1815;
+
+    background: #ffffff;
+}
