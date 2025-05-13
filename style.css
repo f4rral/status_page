@@ -1,43 +1,46 @@
 @font-face {
-    font-family: 'Haval';
-    src: url('Haval-Light.otf') format('opentype');
-    font-weight: 300;
+  font-family: 'Haval';
+  src: url('Haval-Light.otf') format('opentype');
+  font-weight: 300;
 }
 
 @font-face {
-    font-family: 'Haval';
-    src: url('Haval-Regular.otf') format('opentype');
-    font-weight: 400;
+  font-family: 'Haval';
+  src: url('Haval-Regular.otf') format('opentype');
+  font-weight: 400;
 }
 
 @font-face {
-    font-family: 'Haval';
-    src: url('Haval-Medium.otf') format('opentype');
-    font-weight: 500;
+  font-family: 'Haval';
+  src: url('Haval-Medium.otf') format('opentype');
+  font-weight: 500;
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    min-height: 100vh;
-    padding: 80px;
+  min-height: 100vh;
+  padding: 36px;
 
-    font-family: 'Haval', 'Raleway', sans-serif;
-    color: #ffffff;
+  font-family: 'Haval', 'Raleway', sans-serif;
+  color: #ffffff;
 
-    background: #000000;
+  background: #000000;
 }
 
 main {
 
 }
 
+
+/* header */
+
 .header {
-    display: flex;
+  display: flex;
 }
 
 .header__slogan {
@@ -45,34 +48,145 @@ main {
 }
 
 .header__logo {
-    margin-left: 30px;
+  margin-left: 30px;
 }
 
+/* slogan */
+
 .slogan {
-    display: flex;
-    width: 100%;
-    height: 54px;
+  display: flex;
+  width: 100%;
+  height: 26px;
 }
 
 .slogan__cut {
-    display: inline-block;
-    position: relative;
-    left: 16px;
-    width: 38px;
-    height: 54px;
+  display: inline-block;
+  position: relative;
+  left: 16px;
+  width: 38px;
+  height: 26px;
 
-    background-color: #44b8b6;
-    transform: skewX(-28deg);
+  background-color: #44b8b6;
+  transform: skewX(-28deg);
 }
 
 .slogan__content {
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-    padding-left: 52px;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding-left: 52px;
 
-    font-size: 18px;
-    color: #1a1815;
+  font-size: 12px;
+  color: #1a1815;
 
-    background: #ffffff;
+  background: #ffffff;
+}
+
+/* main_info */
+
+.main_info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 54px;
+}
+
+.main_info__greetings {
+
+}
+
+.main_info__greetings_text {
+  font-size: 38px;
+  line-height: 46px;
+  font-weight: 500;
+}
+
+.main_info__watch {
+  margin-top: 48px;
+}
+
+.main_info__address {
+  margin-left: 16px;
+}
+
+.main_info__staff {
+  margin-left: 16px;
+}
+
+/* watch */
+.watch {
+  display: flex;
+  font-weight: 400;
+}
+
+.watch__time {
+  font-size: 90px;
+  line-height: 108px;
+}
+
+.watch__date {
+  display: flex;
+  flex-direction: column;
+  margin-left: 36px;
+
+  font-size: 28px;
+  line-height: 34px;
+}
+
+.watch__date span:first-child {
+  margin-bottom: 16px;
+}
+
+/* address */
+.address {}
+
+.address__title {
+  margin-bottom: 32px;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.address__text {
+  font-family: 'Arial', 'Roboto', sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+/* staff_list */
+
+.staff_list {
+  display: flex;
+  margin-left: -52px;
+}
+
+/* staff_item */
+.staff_item {
+  margin-left: 52px;
+
+  font-family: 'Arial';
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.staff_item__avatar {
+  width: 140px;
+  height: 160px;
+}
+
+.staff_item__avatar img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.staff_item__name {
+
+}
+
+.staff_item__phone {
+  margin-top: 12px;
+
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 600;
 }
