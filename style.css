@@ -16,6 +16,11 @@
   font-weight: 500;
 }
 
+@font-face {
+  font-family: 'Arial';
+  src: url('Arial.ttf') format('truetype');
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -26,7 +31,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  padding: 36px;
+  padding: 38px;
 
   font-family: 'Haval', 'Raleway', sans-serif;
   color: #ffffff;
@@ -43,7 +48,6 @@ main {
 
 
 /* header */
-
 .header {
   display: flex;
 }
@@ -57,7 +61,6 @@ main {
 }
 
 /* slogan */
-
 .slogan {
   display: flex;
   width: 100%;
@@ -88,11 +91,10 @@ main {
 }
 
 /* main_info */
-
 .main_info {
   display: flex;
   justify-content: space-between;
-  margin-top: 54px;
+  margin-top: 48px;
 }
 
 .main_info__greetings {
@@ -125,7 +127,7 @@ main {
 
 .watch__time {
   font-size: 90px;
-  line-height: 108px;
+  line-height: 1;
 }
 
 .watch__date {
@@ -157,7 +159,6 @@ main {
 }
 
 /* staff_list */
-
 .staff_list {
   display: flex;
   margin-left: -52px;
@@ -202,6 +203,7 @@ main {
 }
 
 .order_queue table {
+  width: 100%;
   border-collapse: collapse;
 }
 
@@ -229,16 +231,12 @@ main {
   line-height: 36px;
 }
 
-.order_queue th:nth-child(0) {
-  width: 12%;
-}
-
 .order_queue th:nth-child(1) {
   width: 12%;
 }
 
 .order_queue th:nth-child(2) {
-  width: 16%;
+  width: 12%;
 }
 
 .order_queue th:nth-child(3) {
@@ -246,13 +244,41 @@ main {
 }
 
 .order_queue th:nth-child(4) {
-  width: 16%;
+  width: 18%;
 }
 
 .order_queue th:nth-child(5) {
-  width: 24%;
+  width: 28%;
 }
 
 .order_queue th:nth-child(6) {
-  width: 10%;
+  width: 14%;
+}
+
+/* status */
+.status_order {
+  display: flex;
+  align-items: center;
+
+  color: #D6D6D6;
+}
+
+.status_order--in_progress {
+  color: #F0A21E;
+}
+
+.status_order--completed {
+  color: #44B8B6;
+}
+
+.status_order_ic {
+  width: 26px;
+  height: 46px;
+  margin-right: 20px;
+
+  background-color: currentColor;
+}
+
+.status_order_text {
+  color: currentColor;
 }
