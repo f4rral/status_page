@@ -103,7 +103,7 @@ main {
 
 .main_info__greetings_text {
   font-size: 38px;
-  line-height: 46px;
+  line-height: 1.2;
   font-weight: 500;
 }
 
@@ -281,4 +281,21 @@ main {
 
 .status_order_text {
   color: currentColor;
+}
+
+/* 720p */
+@media (max-width: 1280px) {
+  body {
+    zoom: 0.6;
+    min-height: 160vh;
+
+  }
+}
+
+/* 1.5k */
+@media (min-width: 2560px) {
+  body {
+    zoom: 2;
+    min-height: 50vh;
+  }
 }
